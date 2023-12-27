@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h2 class="class" style="text-decoration: underline;">Current Weather</h2><br>
+            <div class="weather-box">
+                <div class="weather">
+                    <img src="day.jpg" alt="day" width="70px" height="70px" class="icons">    
+                </div>
+                <div>
+                    <h1 class="temp">0&#x2103;</h1>
+                    <span class="situation">Sunny</span>
+            </div>
+                <div class="city">
+                    <h2 class="city1">City</h2>
+                    <!-- <small> -->
+                    <!-- <span class="time">07:21</span> -->
+                    <!-- _ -->
+                    <!-- <span class="date">Tuseday mar 07</span> -->
+                    <!-- </small> -->
+                </div>
+           
+            </div>
+        </div>
+        <div class="group">
+           <div class="searchBox">
+                <!-- <i class='bx bxs-map'></i> -->
+                <input type="search" placeholder="search Location...">
+                <button type="button">&#128269;</button>
+            </div>
+            <div class="weather-details">
+                <h2 style="text-align: center; text-decoration: underline;">Weather Details</h2><br>
+                <div class="humidity">
+                    <span><img src="water-regular-24.png" style="height: 45px; width: 30px;"></span>
+                    <div class="details">
+                        <span class="humidity1">0%</span><br>
+                        <span>Humidity</span>
+                    </div>
+                </div><br><br>
+                <div class="windspeed">
+                    <span><img src="wind-regular-24.png" style="height: 40px; width: 30px;"></span>
+                    <div class="details">
+                        <span class="wind">0km/h</span><br>
+                        <span>Wind speed</span>
+                        <!-- <button>click</button> -->
+                    </div>
+                </div>
+            </div>
+                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK5JREFUSEvt1TEOAUEYBeBvExFnIBIu4R4KoXAIJ1BTOIEelcI5XEHvDgoyspKxYdcWW0hm2jfvvZn3//9MpuGVNawvGVQmHEd0wREbXHNmHwuMccOpJv5Wg3suGoymaOGAQeGYAZ+gXYLPcA68+AajnDD8ItjBrsJwjxf/qV3soi7WmOcmWyyjyHpYleAx/6NBZdHqbkhFDonFXZWKnCaZ/57kuq/AT/vTl1kZ0wPiDFoZO0u5igAAAABJRU5ErkJggg=="/> -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.996 9c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707C11.83 8.253 12.577 9 13.991 9c1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 8.253 20.585 9 22 9V7c-.563 0-.804-.217-1.295-.707C20.159 5.747 19.411 5 17.996 5s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 5.747 11.407 5 9.993 5s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 5.747 3.413 5 2 5v2c.561 0 .801.217 1.291.707C3.836 8.253 4.583 9 5.996 9zm0 5c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707c.545.546 1.292 1.293 2.706 1.293 1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 13.253 20.585 14 22 14v-2c-.563 0-.804-.217-1.295-.707-.546-.546-1.294-1.293-2.709-1.293s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 10.747 11.407 10 9.993 10s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 10.747 3.413 10 2 10v2c.561 0 .801.217 1.291.707C3.836 13.253 4.583 14 5.996 14zm0 5c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707c.545.546 1.292 1.293 2.706 1.293 1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 18.253 20.585 19 22 19v-2c-.563 0-.804-.217-1.295-.707-.546-.546-1.294-1.293-2.709-1.293s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 15.747 11.407 15 9.993 15s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 15.747 3.413 15 2 15v2c.561 0 .801.217 1.291.707C3.836 18.253 4.583 19 5.996 19z"></path></svg> -->
+        </div>
+    </div>
+</body>
+<script src="weather.js"></script>
+</html>
